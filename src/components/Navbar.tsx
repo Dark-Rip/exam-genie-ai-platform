@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import { Menu, X, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+type UserRole = 'student' | 'admin';
+
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   // This would come from authentication context in a real app
-  const userRole = 'student'; // or 'admin'
+  const userRole: UserRole = 'student'; // or 'admin'
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100">

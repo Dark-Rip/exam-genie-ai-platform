@@ -12,6 +12,10 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ExamPage from "./pages/ExamPage";
 import ResultsPage from "./pages/ResultsPage";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Pricing from "./pages/Pricing";
+import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +33,10 @@ const App = () => (
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/exam/:examId" element={<ExamPage />} />
           <Route path="/results/:examId" element={<ResultsPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
