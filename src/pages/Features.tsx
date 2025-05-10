@@ -27,25 +27,25 @@ const Features: React.FC = () => {
           icon: <Brain className="h-6 w-6" />,
           title: "AI-Powered Study Assistant",
           description: "Get instant help on difficult concepts with our intelligent study companion that adapts to your learning style.",
-          color: "blue"
+          color: "blue" as const
         },
         {
           icon: <Clock className="h-6 w-6" />,
           title: "Adaptive Test Timing",
           description: "Practice under real exam conditions with customizable timers that help build time management skills.",
-          color: "purple"
+          color: "purple" as const
         },
         {
           icon: <Book className="h-6 w-6" />,
           title: "Interactive Practice Mode",
           description: "Receive instant feedback and explanations as you work through practice questions at your own pace.",
-          color: "teal"
+          color: "teal" as const
         },
         {
           icon: <ChartBar className="h-6 w-6" />,
           title: "Personalized Analytics",
           description: "Track your progress with detailed performance metrics identifying strengths and improvement areas.",
-          color: "indigo"
+          color: "indigo" as const
         }
       ]
     },
@@ -57,25 +57,25 @@ const Features: React.FC = () => {
           icon: <GraduationCap className="h-6 w-6" />,
           title: "Question Bank Generator",
           description: "Create comprehensive question banks using our AI assistant to generate relevant content for any subject.",
-          color: "purple"
+          color: "purple" as const
         },
         {
           icon: <Database className="h-6 w-6" />,
           title: "Secure Exam Repository",
           description: "Store and organize your exams in a centralized, searchable database with version control.",
-          color: "blue"
+          color: "blue" as const
         },
         {
           icon: <Users className="h-6 w-6" />,
           title: "Student Performance Insights",
           description: "Gain actionable insights into class performance with detailed analytics and reporting tools.",
-          color: "teal"
+          color: "teal" as const
         },
         {
           icon: <Zap className="h-6 w-6" />,
           title: "Automated Grading",
           description: "Save time with intelligent grading for multiple choice and short answer questions with configurable rubrics.",
-          color: "indigo"
+          color: "indigo" as const
         }
       ]
     },
@@ -87,25 +87,25 @@ const Features: React.FC = () => {
           icon: <Shield className="h-6 w-6" />,
           title: "Advanced Security Protocols",
           description: "Ensure exam integrity with our comprehensive security measures including randomized questions and anti-cheating technology.",
-          color: "teal"
+          color: "teal" as const
         },
         {
           icon: <Brain className="h-6 w-6" />,
           title: "Natural Language Processing",
           description: "Our AI engine understands context and nuance in both questions and answers for more accurate assessment.",
-          color: "blue"
+          color: "blue" as const
         },
         {
           icon: <Users className="h-6 w-6" />,
           title: "Collaborative Learning Tools",
           description: "Enable peer learning with discussion forums and group study features integrated into the platform.",
-          color: "purple"
+          color: "purple" as const
         },
         {
           icon: <ChartBar className="h-6 w-6" />,
           title: "Comprehensive Reporting",
           description: "Generate detailed reports on individual and group performance with exportable data for further analysis.",
-          color: "indigo"
+          color: "indigo" as const
         }
       ]
     }
@@ -321,3 +321,4 @@ const Features: React.FC = () => {
 };
 
 export default Features;
+
