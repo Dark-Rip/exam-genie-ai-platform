@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
             {isLoggedIn ? (
               <div className="flex items-center space-x-4">
                 <Link
-                  to={userRole === 'admin' ? '/admin-dashboard' : '/student-dashboard'}
+                  to={userRole === 'student' ? '/student-dashboard' : '/admin-dashboard'}
                   className="px-3 py-2 rounded-md text-sm font-medium text-exam-blue hover:text-exam-purple"
                 >
                   Dashboard
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
             {isLoggedIn ? (
               <>
                 <Link
-                  to={userRole === 'admin' ? '/admin-dashboard' : '/student-dashboard'}
+                  to={userRole === 'student' ? '/student-dashboard' : '/admin-dashboard'}
                   className="block px-3 py-2 rounded-md text-base font-medium text-exam-blue hover:bg-gray-100"
                   onClick={() => setIsMenuOpen(false)}
                 >
